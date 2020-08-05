@@ -33,8 +33,7 @@ class Game
         moveRow = input_move - 1
         #game board originates from the top left so the first placements should
         #be the bottom ones
-
-        #currently we are originating from the top, need to find a way to come from the bottom and we are done.
+        
         @y.times do |i|
             if @board.get_slot((@y-1)-i, moveRow) == '*'
                 place_counter((@y-1)-i, moveRow)
